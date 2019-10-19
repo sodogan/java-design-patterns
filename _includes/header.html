@@ -21,7 +21,7 @@
                         {% if p.title and p.layout != "pattern" %}
                                 <li class="{% if p.url == page.url %}active{% endif %}">
                                 <a href="{{ p.url | prepend: site.baseurl }}">
-                                    <span class="fa fa-lg {{ p.icon }}"></span> {{ p.title }}
+                                    <span class="fa fa-lg {{ p.icon }}"></span> {{ p.link-title }}
                                 </a>
                                 </li>
                         {% endif %}
