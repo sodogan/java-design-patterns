@@ -6,7 +6,7 @@ git submodule update --init
 
 # search and replace the baseurl and url parameters of _config.yml to work on s3
 sed -i -e 's/baseurl: /# baseurl: /g' _config.yml
-sed -i -e 's/url: "https:\/\/iluwatar.github.io"/url: "http:\/\/java-design-patterns.com"/g' _config.yml
+sed -i -e 's/url: "https:\/\/iluwatar.github.io"/url: "https:\/\/java-design-patterns.com"/g' _config.yml
 
 # add the currently used commit hash to the _config.yml so it can be displayed on the website
 printf "\ngithub:\n  build_revision: " >> _config.yml
